@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { ShortbreadDetailsComponent } from './shortbread-details/shortbread-details.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent],
+  imports: [RouterOutlet, ShortbreadDetailsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'shortbread';
   name = 'kaori';
+  template = 'shortbread-details works!';
 }
