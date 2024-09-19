@@ -3,5 +3,5 @@ export interface ShortbreadDetails {
   name: string;
   brand: string;
   price: number;
-  comment: string;
+  comment?: string;
 }
