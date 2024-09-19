@@ -12,5 +12,4 @@ import { ShortbreadDetailsComponent } from './shortbread-details/shortbread-deta
 export class AppComponent {
   title = 'shortbread';
   name = 'kaori';
-  template = 'shortbread-details works!';
 }
