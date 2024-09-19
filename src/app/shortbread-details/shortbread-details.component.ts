@@ -15,11 +15,4 @@ import { ShortbreadDetails } from '../shortbread-details';
 })
 export class ShortbreadDetailsComponent {
   @Input() shortbreadDetails!: ShortbreadDetails;
-  ShortbreadDetails = {
-    id: 1,
-    name: 'shortbread fingar',
-    brand: 'Morrisons',
-    price: 1.0,
-    comment: 'buttery',
-  };
 }
