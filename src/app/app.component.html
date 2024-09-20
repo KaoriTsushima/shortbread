@@ -229,8 +229,10 @@
       <h1>Hello, {{ name }}</h1>
       <h2>This project is {{ title }}</h2>
       <p>Congratulations! Your app is running. 🎉</p>
-      <app-shortbread-details [shortbreadDetails]="morrisonsShortbread" />
-      <app-shortbread-details [shortbreadDetails]="aldiShortbread" />
+      <app-shortbread-details
+        *ngFor="let shortbreadDetails of shortbreadList"
+        [shortbreadDetails]="shortbreadDetails"
+      />
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">

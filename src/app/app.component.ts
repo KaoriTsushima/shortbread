@@ -13,17 +13,25 @@ import { ShortbreadDetails } from './shortbread-details';
 export class AppComponent {
   title = 'shortbread';
   name = 'kaori';
-  morrisonsShortbread: ShortbreadDetails = {
-    id: 1,
-    name: 'shortbread fingar',
-    brand: 'Morrisons',
-    price: 1.0,
-    comment: 'buttery',
-  };
-  aldiShortbread: ShortbreadDetails = {
-    id: 1,
-    name: 'shortbread fingar',
-    brand: 'ALDI',
-    price: 1.5,
-  };
+  shortbreadList: ShortbreadDetails[] = [
+    {
+      id: 1,
+      name: 'shortbread fingar',
+      brand: 'Morrisons',
+      price: 1.0,
+      comment: 'buttery',
+    },
+    {
+      id: 2,
+      name: 'shortbread fingar',
+      brand: 'ALDI',
+      price: 1.5,
+    },
+    {
+      id: 3,
+      name: 'shortbread fingar',
+      brand: 'Lidl',
+      price: 1.2,
+    },
+  ];
 }
