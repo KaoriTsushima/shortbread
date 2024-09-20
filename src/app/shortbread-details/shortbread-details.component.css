@@ -1,3 +1,16 @@
-p {
-  font-size: 15pt;
+.shortbread-list {
+  display: block;
+  border: 1pt solid black;
+  border-radius: 10pt;
+  margin: 10px;
+  padding: 15px;
+}
+h2 {
+  text-align: center;
+}
+h4 {
+  color: blueviolet;
+}
+h4.point {
+  color: red;
 }

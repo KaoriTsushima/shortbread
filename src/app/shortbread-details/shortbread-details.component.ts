@@ -8,9 +8,10 @@ import { ShortbreadDetails } from '../shortbread-details';
   template: `
     <section class="shortbread-list">
       <h2>{{ shortbreadDetails.name }}</h2>
-      <h3>{{ shortbreadDetails.brand }}</h3>
+      <h3>Brand: {{ shortbreadDetails.brand }}</h3>
       <h4>£{{ shortbreadDetails.price }}</h4>
-      <p>{{ shortbreadDetails.comment }}</p>
+      <h4 class="point">Point: {{ shortbreadDetails.point }}/10</h4>
+      <p>Comment: {{ shortbreadDetails.comment }}</p>
     </section>
   `,
   styleUrl: './shortbread-details.component.css',
