@@ -3,6 +3,6 @@ export interface ShortbreadDetails {
   name: string;
   brand: string;
   price: number;
-  point: number;
+  rating: number;
   comment?: string;
 }

@@ -18,7 +18,7 @@ export class AppComponent {
       name: 'shortbread finger',
       brand: 'Morrisons',
       price: 1.0,
-      point: 7,
+      rating: 4,
       comment: 'buttery',
     },
     {
@@ -26,7 +26,7 @@ export class AppComponent {
       name: 'shortbread finger',
       brand: 'ALDI',
       price: 1.5,
-      point: 8,
+      rating: 4.5,
       comment: 'love it',
     },
     {
@@ -34,7 +34,7 @@ export class AppComponent {
       name: 'shortbread finger',
       brand: 'Lidl',
       price: 1.2,
-      point: 6,
+      rating: 3,
       comment: 'floury',
     },
   ];
