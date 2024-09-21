@@ -15,7 +15,7 @@ export class AppComponent {
   shortbreadList: ShortbreadDetails[] = [
     {
       id: 1,
-      name: 'shortbread fingar',
+      name: 'shortbread finger',
       brand: 'Morrisons',
       price: 1.0,
       point: 7,
@@ -23,7 +23,7 @@ export class AppComponent {
     },
     {
       id: 2,
-      name: 'shortbread fingar',
+      name: 'shortbread finger',
       brand: 'ALDI',
       price: 1.5,
       point: 8,
@@ -31,7 +31,7 @@ export class AppComponent {
     },
     {
       id: 3,
-      name: 'shortbread fingar',
+      name: 'shortbread finger',
       brand: 'Lidl',
       price: 1.2,
       point: 6,
