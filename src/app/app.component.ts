@@ -3,11 +3,17 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ShortbreadDetailsComponent } from './shortbread-details/shortbread-details.component';
 import { ShortbreadDetails } from './shortbread-details';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ShortbreadDetailsComponent, CommonModule],
+  imports: [
+    RouterOutlet,
+    ShortbreadDetailsComponent,
+    CommonModule,
+    RouterModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
