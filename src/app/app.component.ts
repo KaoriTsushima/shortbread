@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { ShortbreadDetailsComponent } from './shortbread-details/shortbread-details.component';
 import { ShortbreadDetails } from './shortbread-details';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { RouterModule } from '@angular/router';
     ShortbreadDetailsComponent,
     CommonModule,
     RouterModule,
+    HomeComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
