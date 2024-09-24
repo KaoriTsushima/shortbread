@@ -6,7 +6,7 @@ const routeConfig: Routes = [
   {
     path: '',
     component: ShortbreadDetailsComponent,
-    title: 'Home page',
+    title: 'Shortbread Home',
   },
   {
     path: 'details/:id',
