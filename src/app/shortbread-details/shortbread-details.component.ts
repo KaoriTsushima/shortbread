@@ -9,7 +9,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [FormsModule, NzRateModule, RouterLink, RouterOutlet],
   template: `
-    <section class="shortbread-list">
+    <section class="shortbread-item">
       <h2>{{ shortbreadDetails.name }}</h2>
       <h3>Brand: {{ shortbreadDetails.brand }}</h3>
       <h4>£{{ shortbreadDetails.price }}</h4>

@@ -1,0 +1,10 @@
+.shortbread-lists {
+  /* border: 1px solid red; */
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
