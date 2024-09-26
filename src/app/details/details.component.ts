@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { ShortbreadDetails } from '../shortbread-details';
+import { NutrientService } from '../nutrient.service';
 
 @Component({
   selector: 'app-details',

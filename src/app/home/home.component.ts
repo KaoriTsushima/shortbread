@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ShortbreadDetails } from '../shortbread-details';
 import { ShortbreadDetailsComponent } from '../shortbread-details/shortbread-details.component';
+import { NutrientService } from '../nutrient.service';
 
 @Component({
   selector: 'app-home',
