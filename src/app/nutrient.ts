@@ -1,6 +1,6 @@
 export interface Nutrient {
-  id: number;
-  calory: number;
+  shortBreadId: number;
+  calories: number;
   salt: number;
   sugar: number;
   fat: number;

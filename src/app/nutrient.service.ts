@@ -8,27 +8,31 @@ export class NutrientService {
   @Input() nutrientdata!: Nutrient;
   nutrientList: Nutrient[] = [
     {
-      id: 1,
-      calory: 100,
+      shortBreadId: 1,
+      calories: 100,
       salt: 1,
       sugar: 2,
       fat: 5,
     },
     {
-      id: 2,
-      calory: 110,
+      shortBreadId: 2,
+      calories: 110,
       salt: 1.2,
       sugar: 2,
       fat: 6,
     },
     {
-      id: 3,
-      calory: 105,
+      shortBreadId: 3,
+      calories: 105,
       salt: 1,
       sugar: 3,
       fat: 5.5,
     },
   ];
+
+  getNutrientInfo(id: number) {
+    return this.nutrientList.find((nutrient) => nutrient.shortBreadId === id);
+  }
 
   constructor() {}
 }
