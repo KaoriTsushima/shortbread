@@ -1,0 +1,15 @@
+.nutrient-info {
+  max-width: 1000px;
+  margin-left: 20px;
+}
+.nutrient-info h1 {
+  color: rgb(43, 43, 248);
+}
+.nutrient-info p {
+  text-align: right;
+}
+
+.table {
+  display: block;
+  margin: auto;
+}

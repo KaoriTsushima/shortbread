@@ -4,14 +4,36 @@ import { ActivatedRoute } from '@angular/router';
 import { ShortbreadDetails } from '../shortbread-details';
 import { NutrientService } from '../nutrient.service';
 import { Nutrient } from '../nutrient';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [],
-  template: ` <p>Calories: {{ nutrientInfo?.calories }}</p>
-    <p>sugar: {{ nutrientInfo?.sugar }}</p>
-    <p>salt: {{ nutrientInfo?.salt }}</p>`,
+  imports: [NzTableModule],
+  template: `
+    <div class="nutrient-info">
+      <h1>Nutrient Information</h1>
+      <p>*per 100g</p>
+      <nz-table class="table">
+        <thead>
+          <tr>
+            <th>Calories</th>
+            <th>Salt</th>
+            <th>Sugar</th>
+            <th>Fat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ nutrientInfo?.calories }}kcal</td>
+            <td>{{ nutrientInfo?.salt }}g</td>
+            <td>{{ nutrientInfo?.sugar }}g</td>
+            <td>{{ nutrientInfo?.fat }}g</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+  `,
   styleUrl: './details.component.css',
 })
 export class DetailsComponent {
