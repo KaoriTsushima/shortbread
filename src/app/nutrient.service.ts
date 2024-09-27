@@ -34,5 +34,11 @@ export class NutrientService {
     return this.nutrientList.find((nutrient) => nutrient.shortBreadId === id);
   }
 
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(
+      `Your interest received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`
+    );
+  }
+
   constructor() {}
 }
