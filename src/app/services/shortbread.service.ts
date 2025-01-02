@@ -1,17 +1,10 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Injectable } from '@angular/core';
 import { ShortbreadDetails } from '../models/shortbread-details';
-import { ShortbreadDetailsComponent } from '../shortbread-details/shortbread-details.component';
-import { NutrientService } from '../services/nutrient.service';
 
-@Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, ShortbreadDetailsComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+@Injectable({
+  providedIn: 'root',
 })
-export class HomeComponent {
+export class ShortbreadService {
   shortbreadList: ShortbreadDetails[] = [
     {
       id: 1,
@@ -38,4 +31,6 @@ export class HomeComponent {
       comment: 'floury',
     },
   ];
+
+  constructor() {}
 }

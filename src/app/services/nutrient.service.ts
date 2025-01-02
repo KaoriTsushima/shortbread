@@ -1,5 +1,5 @@
 import { Injectable, Input } from '@angular/core';
-import { Nutrient } from './nutrient';
+import { Nutrient } from '../models/nutrient';
 
 @Injectable({
   providedIn: 'root',

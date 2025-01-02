@@ -1,0 +1,14 @@
+<section class="shortbread-item">
+  <h2>{{ shortbreadDetails.name }}</h2>
+  <h3>Brand: {{ shortbreadDetails.brand }}</h3>
+  <h4>£{{ shortbreadDetails.price }}</h4>
+  <p>Comment: {{ shortbreadDetails.comment }}</p>
+
+  <nz-rate
+    [nzCount]="5"
+    [ngModel]="shortbreadDetails.rating"
+    nzAllowHalf
+  ></nz-rate>
+  <br />
+  <a [routerLink]="['/details', shortbreadDetails.id]">See nutrient data</a>
+</section>
