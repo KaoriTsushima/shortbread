@@ -1,8 +1,7 @@
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ShortbreadDetails } from '../models/shortbread-details';
 import { ShortbreadDetailsComponent } from '../shortbread-details/shortbread-details.component';
-import { NutrientService } from '../services/nutrient.service';
+import { ShortbreadService } from '../services/shortbread.service';
 
 @Component({
   selector: 'app-home',
@@ -12,30 +11,8 @@ import { NutrientService } from '../services/nutrient.service';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  shortbreadList: ShortbreadDetails[] = [
-    {
-      id: 1,
-      name: 'shortbread finger',
-      brand: 'Morrisons',
-      price: 1.0,
-      rating: 4,
-      comment: 'buttery',
-    },
-    {
-      id: 2,
-      name: 'shortbread finger',
-      brand: 'ALDI',
-      price: 1.5,
-      rating: 4.5,
-      comment: 'love it',
-    },
-    {
-      id: 3,
-      name: 'shortbread finger',
-      brand: 'Lidl',
-      price: 1.2,
-      rating: 3,
-      comment: 'floury',
-    },
-  ];
+  shortbreadList: any;
+  constructor(private shortBreadService: ShortbreadService) {
+    this.shortbreadList = this.shortBreadService.getShortbreadList();
+  }
 }
